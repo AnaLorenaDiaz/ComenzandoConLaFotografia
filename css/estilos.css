@@ -55,16 +55,16 @@ nav > a {
 section > div > h2 {
   padding: 2%;
 } 
-#img-central {
+#area-principal {
   background-color: #82c3a6;
   padding: 2%;
   text-align: center;
 }
-#img-secundaria {
+#area-secundaria {
   background-color: #d5c75f;
   text-align: center;
 }
-.secondary {
+.img-secundaria {
   border: 1px solid black;
 }
 #paisajes:hover {
@@ -75,7 +75,7 @@ section > div > h2 {
   transform: translate(20px, -5px);
   box-shadow: 2px 2px 2px #82c3a6;
 }
-.box > ul > li {
+.footer-box > ul > li {
   list-style: none;
 }
 #img-paisajes, #img-retratos {
@@ -100,24 +100,24 @@ section > div > h2 {
   #contenido {
     width: 900px;  
   }
-  .principal {
+  .img-principal {
     width: 90%;
   }
-  #img-secundaria {
+  #area-secundaria {
     display: flex;
     justify-content: space-between;
   }
-  #img-secundaria > div {
+  #area-secundaria > div {
     margin-bottom: 3%;
   }
-  .secondary {
+  .img-secundaria {
     width: 80%;
   }
   footer {
     display: flex;
     justify-content: space-around;
   }
-  .box {
+  .footer-box {
     width: 20%;
     display: inline-block;
     margin: 2%;
@@ -161,10 +161,10 @@ section > div > h2 {
   nav a[href] {
     font-weight: 600; 
   }
-  .principal, .secondary {
+  .img-principal, .img-secundaria {
     width: 70%;
   }
-  .secondary{
+  .img-secundaria {
     margin: 3% 0 3% 0;
   }
   footer {
@@ -172,7 +172,7 @@ section > div > h2 {
     flex-direction: column;
     text-align: left;
   }
-  .box {
+  .footer-box {
     margin: 5%;
     width: 50%;
   }
