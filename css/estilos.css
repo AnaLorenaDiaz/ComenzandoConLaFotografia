@@ -4,6 +4,7 @@
   padding: 0;
 }
 
+
 /*GENERALES*/
 body {
   background-color: #02010a;
@@ -25,6 +26,11 @@ nav {
 }
 img {
   box-shadow: 2px 2px 2px #02010a;
+}
+footer {
+  background-color: #C6d5c5;
+  color: black;
+  border-radius: 0 0 10px 10px;
 }
 
 
@@ -62,9 +68,6 @@ section > div > h2 {
   background-color: #d5c75f;
   text-align: center;
 }
-#img-secundaria > div {
-  margin-bottom: 3%;
-}
 .secondary {
   border: 1px solid black;
 }
@@ -75,6 +78,9 @@ section > div > h2 {
 #retratos:hover {
   transform: translate(20px, -5px);
   box-shadow: 2px 2px 2px #82c3a6;
+}
+.box > ul > li {
+  list-style: none;
 }
 
 
@@ -92,8 +98,21 @@ section > div > h2 {
     display: flex;
     justify-content: space-between;
   }
+  #img-secundaria > div {
+    margin-bottom: 3%;
+  }
   .secondary {
     width: 80%;
+  }
+  footer {
+    display: flex;
+    justify-content: space-around;
+  }
+  .box {
+    width: 20%;
+    display: inline-block;
+    margin: 2%;
+    padding: 2%;
   }
 }
 
@@ -103,10 +122,14 @@ section > div > h2 {
   #contenido {
     width: 100%;
     text-align: center;
+    font-size: 20px;
   }
   header {
     display: flex;
     flex-direction: column;
+  }
+  header > h1 {
+    margin: 5%;
   }
   nav {
     margin: 0 0 3% 0;
@@ -119,5 +142,14 @@ section > div > h2 {
   }
   .secondary{
     margin: 3% 0 3% 0;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  .box {
+    margin: 5%;
+    width: 50%;
   }
 }
