@@ -1,9 +1,7 @@
 *{
-  outline: 1px solid red;
   margin: 0;
   padding: 0;
 }
-
 
 /*GENERALES*/
 body {
@@ -32,19 +30,6 @@ footer {
   color: black;
   border-radius: 0 0 10px 10px;
 }
-
-
-/*ESPECIFICAS*/
-header > h1 {
-  color: white;
-  text-shadow: 2px 2px 2px #02010a;
-}
-nav > a {
-  color: white;
-  text-decoration: none;
-  font-size: 22px;
-}
-
 @keyframes slidein {
   0% {
     margin-top: 150%;
@@ -55,6 +40,17 @@ nav > a {
   100% {
     margin-top: 0%;
   }
+}
+
+/*ESPECIFICAS*/
+header > h1 {
+  color: white;
+  text-shadow: 2px 2px 2px #02010a;
+}
+nav > a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
 }
 section > div > h2 {
   padding: 2%;
@@ -82,8 +78,21 @@ section > div > h2 {
 .box > ul > li {
   list-style: none;
 }
-
-
+#img-paisajes, #img-retratos {
+  background-color: #d5c75f;
+}
+.paisajes1, .retratos1 {
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+.paisajes2, .paisajes4, .paisajes6, .retratos2, .retratos4, .retratos6 {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.paisajes3, .retratos3 {
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
 
 
 /*DESKTOP*/
@@ -114,6 +123,21 @@ section > div > h2 {
     margin: 2%;
     padding: 2%;
   }
+  #img-paisajes-1, #img-retratos-1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+  }
+  #img-paisajes-2, #img-retratos-2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+  }
+  img[class^=paisajes], img[class^=retratos] {
+    width: 30%;
+    height: 30%;
+  }
+
 }
 
 
@@ -151,5 +175,10 @@ section > div > h2 {
   .box {
     margin: 5%;
     width: 50%;
+  }
+  img[class^=paisajes], img[class^=retratos] {
+    width:80%;
+    height: 80%;
+    margin: 2%;
   }
 }
