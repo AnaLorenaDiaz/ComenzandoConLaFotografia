@@ -11,7 +11,6 @@ body {
   display: flex;
   justify-content: center;
 }
-
 header {
   background-color: #5b7989;
   border-radius: 10px 10px 0 0;
@@ -21,15 +20,9 @@ header {
   align-items: center;
   animation: slidein 2s;
 }
-
 nav {
   word-spacing: 15px;
 }
-
-section > a {
-  margin: 3%;
-}
-
 img {
   box-shadow: 2px 2px 2px #02010a;
 }
@@ -40,7 +33,6 @@ header > h1 {
   color: white;
   text-shadow: 2px 2px 2px #02010a;
 }
-
 nav > a {
   color: white;
   text-decoration: none;
@@ -58,21 +50,32 @@ nav > a {
     margin-top: 0%;
   }
 }
-
+section > div > h2 {
+  padding: 2%;
+} 
 #img-central {
   background-color: #82c3a6;
   padding: 2%;
   text-align: center;
 }
-
 #img-secundaria {
   background-color: #d5c75f;
   text-align: center;
 }
+#img-secundaria > div {
+  margin-bottom: 3%;
+}
 .secondary {
   border: 1px solid black;
 }
-
+#paisajes:hover {
+  transform: rotate(10deg);
+  box-shadow: 2px 2px 2px #82c3a6;
+}
+#retratos:hover {
+  transform: translate(20px, -5px);
+  box-shadow: 2px 2px 2px #82c3a6;
+}
 
 
 
@@ -85,7 +88,6 @@ nav > a {
   .principal {
     width: 90%;
   }
-
   #img-secundaria {
     display: flex;
     justify-content: space-between;
@@ -93,7 +95,6 @@ nav > a {
   .secondary {
     width: 80%;
   }
-
 }
 
 
@@ -114,9 +115,9 @@ nav > a {
     font-weight: 600; 
   }
   .principal, .secondary {
-    width: 90%;
+    width: 70%;
   }
-  
-
-  
+  .secondary{
+    margin: 3% 0 3% 0;
+  }
 }
